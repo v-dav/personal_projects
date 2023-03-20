@@ -1,0 +1,7 @@
+Simply put that function in your .bashrc or .zshrc file to use lazygit command to add, commit and push in once. The command looks like this: lazygit "My commit msg"
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
